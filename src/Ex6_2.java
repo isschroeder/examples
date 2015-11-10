@@ -32,6 +32,14 @@ public class Ex6_2 {
         
         public void setLastName( String n ) {
             
+        	/*
+        	 * regular expression
+        	 * ^ beginning of line
+        	 * [] charcaters inside are valid
+        	 * + accepts any number of the accepted letters
+        	 * $ end line
+        	 * 
+        	 */
             if( !n.matches("^[A-Za-z]+$") ) {
                 System.out.println( "Invalid characters in last name" );
             } else {
@@ -53,6 +61,9 @@ public class Ex6_2 {
         public String getMiddleName() {
             return mName;
         }
+        
+        // example phone number regex: "^[0-9]{3}--[0-9]{3}--[0-9]{4}$"
+        
         /*
          * Name (first, last, middle)
          * Prefix
